@@ -1,0 +1,235 @@
+set es_enableCustomData 1 
+set mysql_connection_string "server=mysql-mariadb-sea01-10-101.zap-hosting.com;database=zap669487-1;userid=zap669487-1;password=Aampm6AXJGRuEc62" 
+endpoint_add_tcp "139.99.68.44:30196" 
+endpoint_add_udp "139.99.68.44:30196" 
+sv_maxclients 32
+exec /g321643/gta5-fivem/server-data/permission.cfg
+
++set onesync on.
+
+# These resources will start by default.
+start EasyAdmin
+add_ace group.admin easyadmin allow
+set ea_moderationNotification "false"
+set ea_minIdentifierMatches 2
+exec resources/vMenu/config/permissions.cfg
+add_ace group.admin "vMenu.Everything" allow
+setr vmenu_bans_database_filepath "resources/vMenu/"
+
+
+#These resources will start on launch
+start mapmanager
+start chat
+start esx_rpchat
+start spawnmanager
+start sessionmanager
+start basic-gamemode
+start hardcap
+start rconlog
+start Server-logger
+
+
+#addon resources
+#part 1
+start fxmigrant
+start mysql-async
+start esplugin_mysql
+start essentialmode
+start cron
+start async
+start es_extended
+start esx_skin
+start skinchanger
+start esx_identity
+start esx_society
+start esx_menu_default
+start esx_menu_dialog
+start esx_menu_list
+start esx_billing
+start esx_datastore
+start esx_addoninventory
+start esx_addonaccount
+start instance
+start esx_license
+start esx_service
+start LegacyFuel
+start esx_status
+start esx_basicneeds
+start esx_supermarket
+start es_admin2
+start esx_jobs
+start esx_joblisting
+start vMenu
+
+#part 2
+start trew_hud_ui
+start esx_barbershop
+start esx_carwash
+start esx_clotheshop
+start esx_weaponshop
+start esx_accessories
+start esx_marker
+start esx_inventoryhud
+start esx_inventoryhud_trunk
+start pNotify
+start esx_ambulancejob
+start esx_policejob
+start esx_outlawalert
+start esx_spectate
+
+#part 3 
+start esx_scoreboard
+start Mod_hospital
+start CalmAI
+start esx_duty
+start esx_vehicleshop
+start 3dme
+start wepdraw
+start esx_borrmaskin
+start el_bwh
+start esx_vangelico_robbery
+
+#part 4
+start DanskenPillbox
+start Load
+start mythic_notify
+start mythic_progbar
+
+#part 5
+start discordPresence
+
+#part 6
+start bob74_ipl
+start connectqueue
+start TrafficAdjuster
+
+#part 7
+start esx_carlock
+start watermark
+
+#part 8
+start esx_showcommands
+start st-banking
+
+#part 9
+start progressBars
+start utk_fleeca
+start utk_ornateheist
+start utk_ornateprops
+start cargoo
+
+
+#MZI resources
+start grangeillegal
+start Kuzkay_Meth
+start dpemotes
+start CarryPeople
+start screenshot-basic
+start polspeak
+start playboy
+start esx_fish
+start esx_handcuffs
+start esx-br-rob-humane
+start esx_borrmaskin_humane
+start nfw_wep
+start bahama
+start aircraftcarrier
+start policedepartment
+start madrazoranch
+start loffe_robbery
+start PoliceDP
+start PoliceOut
+start generic_texture
+start loaf_tv
+start cd_easytime
+start ikea
+start loaf_housing
+start HousingShells
+start int_weed
+start ihateai
+start esx_drugs
+start esx_carthief
+start esx-kr-bag-inventory
+start BetterRecoil
+start comicosandy
+start esx_sheriffjob
+start fn_illegals
+start sheriffcar
+start sheriffmav
+start zone
+start onyxDumpsters
+start novehicleweapon
+start furni
+start esx_mining
+start esx_ruskiarrest
+start interact-sound
+start jsfour-idcard
+start kypo-drug-effect
+start medSystem
+start esx_doorlock
+start childped
+start venom
+start auctionmlo
+start WeazelNewsCam
+start Mod_hospital
+start disc-base
+start disc-showid
+start disc-ammo
+start BlipsBuilder
+start mumble-voip 
+start esx_tattooshop
+start crabsnshrimps
+start car-scooter
+start scooterRent
+start courtroom
+start personalmenu
+start dodgeEMS
+start 2015POLSTANG
+start SeatShuff
+start esx_taxijob
+start esx_garage
+start ymapsfolder
+start esx_repairkit
+start esx-kr-vehicle-push
+start RealisticVehicleFailure
+start esx_lawyer
+start 19Raptor
+start malibumansion
+start dpclothing
+start esx_addons_gcphone
+start gcphone
+start vdk_call
+start xsound
+start fivem-ipl
+start iplLoader
+start meta_libs
+start progbars
+start territories
+start carpack1
+start esx_lscustom
+start menuv
+start polo_mecanojob
+start esx_pawnshop
+start court
+start replyandreport
+start esx-kr-advanced-shops
+start wraith
+start vxr
+start r820
+start c63w205
+start Badger-911
+start fk8
+start suzuswift
+start ninjah2
+start trucking
+start bm2
+start rancher
+start server-logger
+start rich
+start esx_randylogs
+
+#restart 
+restart grangeillegal
+restart esx-kr-bag-inventory
+restart bob74_ipl
+restart esx_inventoryhud_trunk
